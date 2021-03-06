@@ -7,7 +7,7 @@ import (
 
 // Poem Represents a poem
 type Poem struct {
-	ID      uint   `json:"id" binding:"required"`
+	ID      uint   `json:"id"`
 	Title   string `json:"title" binding:"required"`
 	Content string `json:"content" binding:"required"`
 }

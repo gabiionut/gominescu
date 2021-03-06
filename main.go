@@ -14,6 +14,7 @@ func main() {
 	r.GET("/poems", controllers.GetPoems)
 	r.GET("/poems/:id", controllers.GetPoemByID)
 	r.GET("/search", controllers.SearchPoem)
+	r.POST("/poem", controllers.AddPoem)
 
 	r.Run()
 }
